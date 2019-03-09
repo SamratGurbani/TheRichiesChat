@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "362056750138",
+    "firebase_url": "https://therichieschat-e9d39.firebaseio.com",
+    "project_id": "therichieschat-e9d39",
+    "storage_bucket": "therichieschat-e9d39.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:362056750138:android:cd10c01c1f6fa24e",
+        "android_client_info": {
+          "package_name": "com.samrat.therichieschat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "362056750138-u5ho361qq10klbl3ff55u7vu3fsbnmjp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.samrat.therichieschat",
+            "certificate_hash": "bc0d12f74023c3913e67161091c8b27dbeaad717"
+          }
+        },
+        {
+          "client_id": "362056750138-isgbv3bff92vqcemnh9664rocjt08rhu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQoTZgMZQ2HHSeY6zVIsatL4xY_Zjc4lo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "362056750138-isgbv3bff92vqcemnh9664rocjt08rhu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
