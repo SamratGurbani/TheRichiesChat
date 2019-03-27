@@ -175,6 +175,7 @@ public class GroupChatActivity extends AppCompatActivity {
 
             displayTextMessage.append(chatName+" : \n "+ chatMessage+" \n "+ chatTime+"    "+chatDate+" \n\n\n");
 
+            //Automatically brings the chat to latest message (one line code only)
             mScrollView.fullScroll(ScrollView.FOCUS_DOWN);
 
         }
