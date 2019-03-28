@@ -35,6 +35,11 @@ dependencies {
     //circle image view
     implementation 'de.hdodenhof:circleimageview:3.0.0'
 
+    //image cropper library
+    api 'com.theartofdev.edmodo:android-image-cropper:2.7.+'
+
+    //picasso library for image loader from url
+    implementation 'com.squareup.picasso:picasso:2.71828'
 }
 
 apply plugin: 'com.google.gms.google-services'

@@ -116,9 +116,8 @@ public class PhoneLoginActivity extends AppCompatActivity {
 
                 VerifyButton.setVisibility(View.INVISIBLE);
                 InputVerificationCode.setVisibility(View.INVISIBLE);
-
-
             }
+
             @Override
             public void onCodeSent(String verificationId,
                                    PhoneAuthProvider.ForceResendingToken token) {
@@ -137,6 +136,7 @@ public class PhoneLoginActivity extends AppCompatActivity {
                 InputVerificationCode.setVisibility(View.VISIBLE);
 
             }
+
         };
     }
 
