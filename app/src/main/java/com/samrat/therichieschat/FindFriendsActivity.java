@@ -1,5 +1,6 @@
 package com.samrat.therichieschat;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -55,10 +56,21 @@ public class FindFriendsActivity extends AppCompatActivity {
         FirebaseRecyclerAdapter<Contacts, FindFriendsViewHolder> adapter =
                 new FirebaseRecyclerAdapter<Contacts, FindFriendsViewHolder>(options) {
                     @Override
-                    protected void onBindViewHolder(@NonNull FindFriendsViewHolder holder, int position, @NonNull Contacts model) {
+                    protected void onBindViewHolder(@NonNull FindFriendsViewHolder holder, final int position, @NonNull Contacts model) {
                         holder.userName.setText(model.getName());
                         holder.userStatus.setText(model.getStatus());
                         Picasso.get().load(model.getImage()).placeholder(R.drawable.profile_image).into(holder.profileImage);
+
+                        holder.itemView.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                String visit_user_id = getRef(position).getKey().toString();
+
+                                Intent profileIntent = new Intent(FindFriendsActivity.this,ProfileActivity.class);
+                                profileIntent.putExtra("visit_user_id",visit_user_id);
+                                startActivity(profileIntent);
+                            }
+                        });
                     }
 
                     @NonNull
